@@ -1,75 +1,95 @@
-* {
-    font-family: Lucida Sans, Arial, Helvetica, sans-serif;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
 }
 
-body {
-    margin: 50px auto;
-    background-color: #ffffff;
+header {
+    background: transparent;
+
 }
 
-header h1 {
-    font-size: 108px;
-    margin: 0px;
+.container {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: 0 auto;
 }
 
-header h2 {
-    font-size: 54px;
-    margin: 0px;
-    color: #888;
-    font-style: italic;
+.logo img{
+    display:block;
+    width: 20%;
 }
 
-nav ul {
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+.navbar nav li{
     list-style: none;
-    padding: 20px;
-    display: block;
-    clear: right;
-    background-color: #666;
-    padding-left: 4px;
-    height: 48px;
+    margin-left: 1rem;
 }
 
-nav ul li {
-    display: inline;
-    padding: 0px 20px 5px 10px;
-    border-right: 1px solid #ccc;
-}
-
-nav ul li a {
-    color: #EFD3D3;
+.navbar nav li a{
     text-decoration: none;
-    font-size: 39px;
-    font-weight: bold;
+    color: #211917;
+    font-size: 1.1rem;
+    padding: 1.9rem 0.6rem;
+    transition: all 0.4s ease-in;
 }
 
-nav ul li a:hover {
-    color: #fff;
+.navbar nav li a:hover{
+    background: #1f52a8;
+    color: #ffffff;
+}
+body{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.350),rgba(0, 0, 0, 0.5)),url('../images/bella-vista-resort-overview.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    height: 90vh;
+}
+.content h2{
+    font-size: 4.5rem;
+    color: #ffffff;
+    font-family: "ubuntu",sans-serif;
 }
 
-article > header h1 {
-    font-size: 60px;
-    margin-left: 14px;
+.content p{
+    font-size: 1.1rem;
+    color:#ffffff;
+    line-height: 1.4;
 }
-
-article > header h1 a {
-    color: #993333;
+.content .social_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 1.9rem;
+    cursor: pointer;
+    margin-top: 2rem;
 }
-
-article > header h1 img {
-    vertical-align:middle;
+.content .social_icons i{
+    padding: 0.6rem;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.5s ease-in-out;
 }
-
-article > section header h1 {
-    font-size: 48px;
-}
-
-article p {
-    clear: both;
-}
-
-footer p {
-    text-align: center;
-    font-size: 36px;
-    color: #888;
-    margin-top: 30px;
+.navbar .btn{
+    font-size: 1.2rem;
+    color: #ffffff;
+    align-items: center;
+    cursor: pointer;
+    display: none;
 }
